@@ -1,0 +1,30 @@
+[
+    {
+        "siteWebmasterName" : "Hika",
+        "siteWebmasterBskyHandle" : "hikatamika.com",
+        "siteWebmasterBskyDID" : "did:plc:6vrf44pabqhagogoibjbc42y",
+        "siteName" : "HK★TMK",
+        "siteURL" : "hikatamika.com",
+        "site8831" : "hksitebutton-sm.png",
+        "siteRSS" : "hikatamika.com/feed",
+        "siteDesc" : "My personal site. A place where I archive all my work.",
+        "siteAgeRating" : "teen",
+        "siteTags" : [
+            "art",
+            "blog"
+        ]
+    },
+    {
+        "siteWebmasterName" : "Belle",
+        "siteWebmasterBskyHandle" : "torrent-empress.bsky.social",
+        "siteWebmasterBskyDID" : "did:plc:7ztoas5m6664r5bwab56byec",
+        "siteName" : "Torrent Empress",
+        "siteURL" : "torrentempress.neocities.org",
+        "site8831" : "torrent-empress.gif",
+        "siteDesc" : "",
+        "siteAgeRating" : "adult",
+        "siteTags" : [
+            "art"
+        ]
+    }
+]

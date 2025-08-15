@@ -1,0 +1,39 @@
+---
+layout: /layouts/main.njk
+pagination:
+  data: webringTags
+  size: 1
+  alias: webringTag
+permalink: "/members/tagged/{{ webringTag | slugify }}/"
+eleventyComputed:
+  title: "Members Tagged: \"{{ webringTag }}\""
+---
+{% for link in webringMembers %}
+  {% if webringTag in link.siteTags %}
+  {% if link.siteWebmasterName %}
+    <div class="member-header">
+      <h2>{{ link.siteWebmasterName }} — {{ link.siteName }}</h2>
+      {% if link.site8831 %}
+        <span>|</span>
+        <a href="https://{{ link.siteURL }}" target="_blank"><img src="/src/img/sitebuttons/{{ link.site8831 }}" alt="{{ link.siteName }}"></a>
+      {% endif %}
+    </div>
+  {% endif %}
+  <ul>
+    {% if link.siteWebmasterBskyHandle %}
+      <li>Website: <a href="https://{{ link.siteURL }}" target="_blank">{{ link.siteURL }}</a></li>
+      <li>Bluesky: <a href="https://bsky.app/profile/{{ link.siteWebmasterBskyDID }}" target="_blank">@{{ link.siteWebmasterBskyHandle }}</a></li>
+      {% if link.siteDesc %}
+        <li><p>{{ link.siteDesc }}</p></li>
+      {% endif %}
+    {% endif %}
+    {% if link.siteTags %}
+      <ul>
+        {% for tag in link.siteTags %}
+          <li><a href="/members/tagged/{{ tag }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </ul>
+  {% endif %}
+{% endfor %}

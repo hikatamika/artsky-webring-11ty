@@ -1,0 +1,58 @@
+{% if link.siteWebmasterName %}
+  <div class="member-header">
+    <h2>{{ link.siteWebmasterName }} — {{ link.siteName }}</h2>
+    {% if link.site8831 %}
+      <span>|</span>
+      <a href="https://{{ link.siteURL }}" target="_blank">
+        <img src="/src/img/sitebuttons/{{ link.site8831 }}"
+             alt="{{ link.siteName }}">
+      </a>
+    {% endif %}
+    {% if link.siteRSS %}
+      <div class="rss-icon"><a href="{{ link.siteRSS }}" target="_blank"><img src="/src/img/feed-icon.webp" alt="{{ link.siteName }} RSS Icon" style="height: 24px; width: 24px;"></a></div>
+    {% endif %}
+  </div>
+{% endif %}
+<ul>
+  {% if link.siteWebmasterBskyHandle %}
+    <li>
+      <b>Bluesky:</b> <a href="https://bsky.app/profile/{{ link.siteWebmasterBskyDID }}"
+    target="_blank">@{{ link.siteWebmasterBskyHandle }}</a>
+    </li>
+  {% endif %}
+  <li>
+    <b>Website:</b> <a href="https://{{ link.siteURL }}" target="_blank">{{ link.siteURL }}</a>
+  </li>
+  {% if link.siteDesc %}
+    <li>
+      <b>Site Description:</b>
+      <p>{{ link.siteDesc }}</p>
+    </li>
+  {% endif %}
+  <li>
+    <b>Site Age Rating:</b>
+    <span>
+      {% if link.siteAgeRating == 'allAges' %}
+        All Ages
+      {% elif link.siteAgeRating == 'teen' %}
+        Teen: 13+
+      {% elif link.siteAgeRating == 'adult' %}
+        Adult Audiences: 18+
+      {% else %}
+        Not Yet Rated
+      {% endif %}
+    </span>
+  </li>
+  {% if link.siteTags %}
+    <li>
+      <b>Tags:</b>
+    </li>
+    <ul>
+      {% for tag in link.siteTags %}
+        <li>
+          <a href="/members/tagged/{{ tag }}">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</ul>

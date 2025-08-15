@@ -1,0 +1,60 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #artsky-webring with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+/* Resetting CSS */
+#artsky-webring a, #artsky-webring span, #artsky-webring table, #artsky-webring tbody, #artsky-webring tfoot, #artsky-webring thead, #artsky-webring tr, #artsky-webring th, #artsky-webring td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#artsky-webring {
+  margin: 0 auto;
+  padding: 15px; /* creates some space around the widget */
+  font-size: 1rem;
+}
+
+#artsky-webring table {
+  background-color: #ffffff; /* makes the background pure white */
+  margin: 0 auto; /* centers the widget */
+  border-collapse: collapse;
+  css-reset
+}
+
+#artsky-webring table, #artsky-webring tr, #artsky-webring td {
+  padding: 15px; /* creates some space between the links and text inside the widget */
+  background-color: #ffffff; /* makes the background pure white */
+}
+
+#artsky-webring a:link, #artsky-webring a:visited {
+  color: #0000EE
+}
+
+#artsky-webring a:hover {
+  color: #0000EE
+}
+
+#artsky-webring a:active, #artsky-webring a:visited:active {
+  color: #FF0000
+}
+#artsky-webring .webring-prev {
+  text-align:right;
+}
+
+#artsky-webring .webring-info {
+   text-align:center;
+}
+
+#artsky-webring .webring-next {
+  text-align:left;
+}
+
+#artsky-webring .webring-links {
+  font-size:small;
+}

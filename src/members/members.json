@@ -1,0 +1,4 @@
+{
+  "layout": "/layouts/sec-nav.njk",
+  "secNavSec": "members"
+}

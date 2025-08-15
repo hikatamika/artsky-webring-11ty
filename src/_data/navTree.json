@@ -1,0 +1,45 @@
+[
+  {
+    "lvl1Item": "home",
+    "lvl1Label": "Home",
+    "lvl1Link": "/#"
+  },
+  {
+    "lvl1Item": "members",
+    "lvl1Label": "Members",
+    "lvl1Link": "/members",
+    "hasLvl2Items": true,
+    "lvl2Items": [
+      {
+        "lvl2Item": "allMembers",
+        "lvl2Label": "All",
+        "lvl2Link": "/members"
+      },
+      {
+        "lvl2Item": "taggedMembers",
+        "lvl2Label": "Tagged",
+        "lvl2Link": "/tags"
+      }
+    ]
+  },
+  {
+    "lvl1Item": "join",
+    "lvl1Label": "Join",
+    "lvl1Link": "/#"
+  },
+  {
+    "lvl1Item": "about",
+    "lvl1Label": "About",
+    "lvl1Link": "/#"
+  },
+  {
+    "lvl1Item": "links",
+    "lvl1Label": "Links",
+    "lvl1Link": "/#"
+  },
+  {
+    "lvl1Item": "rss",
+    "lvl1Label": "RSS",
+    "lvl1Link": "/#"
+  }
+]

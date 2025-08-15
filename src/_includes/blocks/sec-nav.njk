@@ -1,0 +1,14 @@
+<nav id="secNav">
+  <ul class="top-nav-2">
+    {% for lvl1Item in navTree %}
+      {% if lvl1Item.lvl1Item == "sites" %}
+        {% for lvl2Item in lvl1Item.lvl2Items %}
+          <li class="nav-dropdown-0">
+            <a href="{{ lvl2Item.lvl2Link }}" class="sidenav-lvl1">
+              <span>{{ lvl2Item.lvl2Label }}</span></a>
+          </li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

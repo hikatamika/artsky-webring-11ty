@@ -1,0 +1,395 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ============    Start Variables      ============ */
+
+:root {
+  /* ============ Spacing Variables ============ */
+  --spacing-025: .25rem;
+  --spacing-035: .35rem;
+  --spacing-05: .5rem;
+  --spacing-06: .625rem;
+  --spacing-07: .75rem;
+  --spacing-10: 1rem;
+  --spacing-15: 1.5rem;
+  --spacing-20: 2rem;
+  --spacing-25: 2.5rem;
+  --spacing-30: 3rem;
+  --spacing-40: 4rem;
+  --spacing-50: 5rem;
+  --spacing-60: 6rem;
+  --spacing-66: 6.666rem;
+  --spacing-70: 7rem;
+  --spacing-75: 7.5rem;
+  --spacing-80: 8rem;
+  --spacing-90: 9rem;
+  --spacing-100: 10rem;
+  --spacing-150: 15rem;
+  --spacing-200: 20rem;
+  --spacing-250: 25rem;
+
+  /* ============ Color Variables ============ */
+
+  /* ============ Speed Variables ============ */
+  --speed-snappy: 0.333s;
+
+  /* ============ Font Size Variables ============ */
+  --fontsize-200p: 2em;
+  --fontsize-190p: 1.9em;
+  --fontsize-180p: 1.8em;
+  --fontsize-170p: 1.7em;
+  --fontsize-160p: 1.6em;
+  --fontsize-150p: 1.5em;
+  --fontsize-140p: 1.4em;
+  --fontsize-130p: 1.3em;
+  --fontsize-120p: 1.2em;
+  --fontsize-110p: 1.1em;
+  --fontsize-100p: 1em;
+  --fontsize-90p: 0.9em;
+  --fontsize-80p: 0.8em;
+  --fontsize-70p: 0.7em;
+  --fontsize-60p: 0.6em;
+  --fontsize-50p: 0.5em;
+  --fontsize-40p: 0.4em;
+  --fontsize-30p: 0.3em;
+  --fontsize-20p: 0.2em;
+  --fontsize-10p: 0.1em;
+
+  /* ============ Border Radius Variables ============ */
+  --br-x-small: 2px;
+  --br-small: 4px;
+  --br-sm-md: 6px;
+  --br-med: 8px;
+}
+
+/* ============    Start Content      ============ */
+
+/* ============   End Content     ============ */
+
+/* ============    Start Site      ============ */
+
+/* ======   Site   ====== */
+/* === Sitewide === */
+h1.title-heading {
+  text-align: center;
+}
+
+/* === Nav === */
+#topNav > ul, #secNav > ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-20);
+  list-style: none;
+  padding-inline: 0;
+}
+
+#secNav > ul {
+  margin-block-start: 0;
+  margin-block-end: var(--spacing-20);
+}
+
+#topNav > ul > li, #secNav > ul > li {
+  flex-shrink: 1;
+}
+
+/* === Home === */
+div.code-block {
+  border: 1px solid;
+  border-radius: var(--br-x-small);
+  font-family: Menlo, Consolas, monaco, monospace;
+  padding: .8em 1em;
+  box-sizing: border-box;
+  overflow: scroll;
+  font-size: 1rem;
+}
+
+div.code-block code {
+  background-color: transparent;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+  display: inline-block;
+}
+
+/* === Member Roll === */
+div.member-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-07);
+}
+
+div.member-header > h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+div.rss-icon {
+  align-self: center;
+}
+
+/* ======   Footer   ====== */
+
+/* Small devices such as large phones (640px and up) 📱 */
+/* stylelint-disable-next-line block-no-empty */
+@media only screen and (width >= 640px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) 📱 */
+@media only screen and (width >= 768px) {}
+
+
+/* Large devices such as laptops (1024px and up) 💻 */
+@media only screen and (width >= 1024px) {}
+
+/* Largest devices such as desktops (1280px and up) 💻 */
+@media only screen and (width >= 1280px) {}
+
+/* WSXGA+ Screens+ 💻 */
+@media only screen and (width >= 1680px) {}
+
+/* ============    End Site      ============ */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
